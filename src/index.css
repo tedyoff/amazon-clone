@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Slick carousel default styles */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* ===== Custom Styles ===== */
+:root {
+  --amazon-blue: #131921;
+  --amazon-yellow: #febd69;
+  --amazon-lightblue: #232f3e;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #111;
+}
+
+/* Banner fade overlay */
+.banner-fade {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(to top, #f3f3f3, transparent);
+}

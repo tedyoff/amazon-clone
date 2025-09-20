@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Custom Styles ===== */
+
+/* Amazon-like brand colors */
+:root {
+  --amazon-blue: #131921;
+  --amazon-yellow: #febd69;
+  --amazon-lightblue: #232f3e;
+}
+
+/* Body defaults */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #111;
+}
+
+/* Header */
+header {
+  background-color: var(--amazon-blue);
+}
+
+/* Search bar */
+header input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+}
+
+/* Button (Add to Cart, etc.) */
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Product card shadow */
+.product-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner-fade {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(to top, #f3f3f3, transparent);
+}
